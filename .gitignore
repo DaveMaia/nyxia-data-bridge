@@ -1,0 +1,40 @@
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# PyInstaller Build Artifacts (O binário .exe deve ser distribuído via GitHub Releases para não inchar o histórico git)
+build/
+dist/
+*.spec
+
+# Pacotes de Transporte e Backups Locais
+*.agpkg
+*.7z
+*.zip
+*.tar.gz
+*.dmp
+*.lock
+
+# Logs e Arquivos Temporários
+*.log
+*.tmp
+*.bak
+temp/
+tmp/
+
+# IDE & Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

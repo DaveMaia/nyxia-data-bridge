@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<meta content="mobile_blank" name="shell-type"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #F1F5F9;
+        color: #0F172A;
+      }
+      body {
+        overscroll-behavior-y: none;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 16px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "slate-deep": "#0F172A",
+            "slate-mid": "#64748B",
+            "slate-border": "#CBD5E1",
+            "frost-bg": "#F1F5F9",
+            "cobalt": "#2563EB",
+            "tech-indigo": "#6366F1",
+            "tech-indigo-bg": "#EDE9FE",
+            "emerald-status": "#059669",
+            "emerald-status-bg": "#ECFDF5",
+            "terracotta": "#c2410c"
+          },
+          fontFamily: {
+            "headline": ["Plus Jakarta Sans", "sans-serif"],
+            "body": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#F1F5F9] text-[#0F172A] antialiased min-h-screen flex flex-col relative selection:bg-blue-100 selection:text-blue-900 font-body">
+<!-- Ambient Frosted Acrylic Glowing Orbs -->
+<div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-md h-96 bg-gradient-to-b from-blue-200/45 via-indigo-100/35 to-transparent blur-[90px] pointer-events-none -z-10"></div>
+<div class="fixed bottom-10 -right-16 w-72 h-72 rounded-full bg-emerald-100/40 blur-[80px] pointer-events-none -z-10"></div>
+<!-- Header -->
+<header class="sticky top-0 w-full z-50 bg-[#F1F5F9]/85 backdrop-blur-xl pt-safe border-b border-[#CBD5E1]/70">
+<div class="h-14 px-5 flex items-center justify-between">
+<!-- Brand & Version -->
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-xl bg-white border border-[#CBD5E1] shadow-xs flex items-center justify-center text-[#2563EB]">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-[17px] text-[#0F172A] tracking-tight">Nyxia Core Bridge</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-[#EDE9FE] text-[#6366F1] border border-[#6366F1]/20">v2.5</span>
+</div>
+</div>
+<!-- Pular / Skip action -->
+<button aria-label="Pular introdução" class="px-3 py-1.5 rounded-full text-[13px] font-semibold text-[#64748B] hover:text-[#0F172A] hover:bg-white/80 transition-colors" type="button">
+        Pular
+      </button>
+</div>
+</header>
+<!-- Main Content Flow -->
+<main class="flex-1 flex flex-col justify-between px-5 pt-4 pb-safe max-w-md mx-auto w-full">
+<div class="flex flex-col gap-5">
+<!-- Status Protocol Banner -->
+<div class="flex items-center justify-between gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#ECFDF5] border border-[#059669]/20 shadow-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#059669] opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-[#059669]"></span>
+</span>
+<span class="font-headline text-[10.5px] font-bold text-[#059669] tracking-wider uppercase">◈ MANIFESTO NOMAD • SOBERANIA COGNITIVA</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-white/90 border border-[#CBD5E1] shadow-xs">
+<span class="material-symbols-outlined text-[13px] text-[#059669]">verified_user</span>
+<span class="font-headline text-[10px] font-bold text-[#059669] tracking-wider">100% P2P LOCAL</span>
+</div>
+</div>
+<!-- Hero Title Section -->
+<div class="flex flex-col gap-2 pt-1">
+<h1 class="font-headline text-[26px] leading-[32px] font-extrabold text-[#0F172A] tracking-tight">
+          Seu Cérebro Digital Não Pertence à Nuvem
+        </h1>
+<p class="text-[13.5px] leading-[20px] text-[#64748B]">
+          Verdadeira independência de dados: preserve a continuidade do seu pensamento sem custódia de terceiros.
+        </p>
+</div>
+<!-- Key Principles Bento Stack -->
+<div class="flex flex-col gap-3.5">
+<!-- Principle Card 1 -->
+<article class="p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#CBD5E1] shadow-[0_4px_16px_rgba(15,23,42,0.04)] transition-all duration-200">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-[#EDE9FE] border border-[#6366F1]/20 flex items-center justify-center shrink-0 text-[#6366F1]">
+<span class="material-symbols-outlined text-[21px]">cloud_off</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1.5">
+<h2 class="font-headline font-bold text-[14.5px] text-[#0F172A] leading-snug">
+                  A Ilusão do Estado em Nuvem
+                </h2>
+<span class="px-2 py-0.5 rounded-md text-[9.5px] font-bold tracking-wider bg-[#EDE9FE] text-[#6366F1] border border-[#6366F1]/20 uppercase shrink-0">
+                  LOCAL-FIRST
+                </span>
+</div>
+<p class="text-[12.5px] leading-[18px] text-[#64748B]">
+                Modelos executam inferência remota, mas a sua inteligência de trabalho real (regras de contexto, memórias de depuração e raciocínio acumulado) vive estritamente no seu disco local.
+              </p>
+</div>
+</div>
+</article>
+<!-- Principle Card 2 -->
+<article class="p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#CBD5E1] shadow-[0_4px_16px_rgba(15,23,42,0.04)] transition-all duration-200">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-[#ECFDF5] border border-[#059669]/20 flex items-center justify-center shrink-0 text-[#059669]">
+<span class="material-symbols-outlined text-[21px]">devices</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-2 mb-1.5">
+<h2 class="font-headline font-bold text-[14.5px] text-[#0F172A] leading-snug">
+                  A Fratura do Workstation
+                </h2>
+<span class="px-2 py-0.5 rounded-md text-[9.5px] font-bold tracking-wider bg-[#ECFDF5] text-[#059669] border border-[#059669]/20 uppercase shrink-0">
+                  ZERO AMNÉSIA
+                </span>
+</div>
+<p class="text-[12.5px] leading-[18px] text-[#64748B]">
+                Mudar de computador não deve significar amnésia induzida. Você não tem que reensinar seus padrões cognitivos toda vez que abre o notebook.
+              </p>
+</div>
+</div>
+</article>
+<!-- Special Highlight Card -->
+<article class="p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-[#6366F1]/30 shadow-[0_6px_20px_rgba(99,102,241,0.07)] flex flex-col gap-2.5">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-[#EDE9FE] border border-[#6366F1]/25 flex items-center justify-center text-[#6366F1]">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+</div>
+<span class="font-headline font-bold text-[13.5px] text-[#0F172A]">Antigravity • Córtex &amp; Árvores Cognitivas</span>
+</div>
+<span class="font-headline font-bold text-[10px] text-[#6366F1] bg-[#EDE9FE] px-2 py-0.5 rounded-full border border-[#6366F1]/20">
+              .gemini/brain
+            </span>
+</div>
+<blockquote class="text-[12.5px] leading-[18px] text-[#0F172A] italic border-l-2 border-[#6366F1] pl-3 py-0.5 my-0.5">
+            “A IA não é uma janela de chat volátil; é um histórico evolutivo de hipóteses e refatorações.”
+          </blockquote>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-[#F1F5F9] text-[#64748B] border border-[#CBD5E1]">
+              brain/transcript.jsonl
+            </span>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-[#F1F5F9] text-[#64748B] border border-[#CBD5E1]">
+              config/skills/
+            </span>
+<span class="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-[#EDE9FE] text-[#6366F1] border border-[#6366F1]/20">
+              MCP Connectors
+            </span>
+</div>
+</article>
+</div>
+</div>
+<!-- Bottom Controls & Navigation -->
+<div class="flex flex-col gap-4 mt-6">
+<!-- Stepper Indicator -->
+<div class="flex items-center justify-center gap-2">
+<div class="w-7 h-1.5 rounded-full bg-[#2563EB] shadow-xs transition-all duration-300"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-[#CBD5E1]"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-[#CBD5E1]"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-[#CBD5E1]"></div>
+</div>
+<!-- Action Button Bar -->
+<div class="grid grid-cols-12 gap-3 items-center">
+<button class="col-span-4 h-12 rounded-full bg-white/90 backdrop-blur-md border border-[#CBD5E1] text-[#64748B] hover:text-[#0F172A] hover:bg-white active:bg-slate-100 shadow-xs transition-all duration-200 flex items-center justify-center font-headline font-semibold text-[14px]" type="button">
+          Pular
+        </button>
+<button class="col-span-8 h-12 rounded-full bg-[#2563EB] hover:bg-blue-700 active:bg-blue-800 text-white shadow-[0_4px_16px_rgba(37,99,235,0.3)] active:scale-[0.99] transition-all duration-200 flex items-center justify-center gap-2 font-headline font-semibold text-[14.5px] group" type="button">
+<span>Próximo Passo</span>
+<span class="material-symbols-outlined text-[19px] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+<!-- Subtle System Footer -->
+<footer class="flex items-center justify-center gap-1.5 pb-1 text-[#64748B]">
+<span class="material-symbols-outlined text-[14px] text-[#c2410c]">terminal</span>
+<span class="font-headline text-[10px] tracking-[0.2em] uppercase font-bold text-[#64748B]">
+          NYXIA SYSTEMS • <span class="text-[#c2410c]">AI</span> • SOLUTIONS
+        </span>
+</footer>
+</div>
+</main>
+</body></html>
