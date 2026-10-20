@@ -24,6 +24,34 @@ Ao invés de gastar a tarde remendando pastas na mão, resolvi canalizar a frust
 
 ---
 
+### 🎒 O que veio depois: O conceito de "Dados Viajantes" (ou Dados Aventureiros)
+
+Assim que o protótipo funcionou para o Antigravity, veio o segundo estalo, ainda maior:  
+*“Espera aí... por que parar nas IAs? Isso aqui pode carregar qualquer pedaço do meu mundo digital de um canto a outro.”*
+
+Pensei neles como **Dados Viajantes** — ou **Dados Aventureiros**. 
+
+Seus dados não foram feitos para viver aprisionados no disco rígido de uma máquina fixa na bancada, e muito menos como reféns de nuvens proprietárias que exigem login constante, cobram assinaturas perpétuas e passam um aspirador de telemetria em cada arquivo seu. 
+
+O desenvolvedor moderno não carrega só código no Git: carrega chaves SSH que abrem servidores pelo mundo, dezenas de conexões complexas no DBeaver, cofres de ideias no Obsidian, sessões do Docker, automações no terminal e prompts de comando. Esses dados têm que ter a liberdade de viajar com você — seja num pen drive espetado no chaveiro, num SSD portátil ou num snapshot seguro. Eles saem do Windows, aterrissam no Ubuntu, viajam entre computadores diferentes e continuam sendo **seus**, com integridade matemática e custódia física imediata.
+
+Então fui com tudo nessa direção: expandi a ferramenta para suportar qualquer caminho arbitrário (`+ Adicionar Caminho`), módulos dinâmicos para ferramentas de TI e controle total para o operador.
+
+---
+
+### 🌐 Construindo uma Infraestrutura Livre da Nuvem (Participe!)
+
+O **Nyxia Data Bridge** é um manifesto em forma de código por uma computação **Local-First, Soberana e Descentralizada**. A nuvem tem seu valor, mas sua estação de trabalho, suas memórias de inteligência artificial e suas ferramentas essenciais não deveriam depender de conexão com internet ou da boa vontade de servidores corporativos para funcionar.
+
+Se você também acredita que o poder computacional deve pertencer a quem o opera:
+- **Adicione novos módulos**: Tem ferramentas de IA, terminais, IDEs ou bancos que você usa no seu dia a dia? Submeta um PR com novos presets em `presets.py`.
+- **Aprimore a compatibilidade**: Ajude a lapidar o comportamento no Linux, WSL, FreeBSD e macOS.
+- **Traga novas ideias**: Criptografia de ponta, integrações com novos agentes e empacotadores portáteis.
+
+Faça um fork, teste, use no seu dia a dia e **ajude a construir uma infraestrutura verdadeiramente livre da nuvem.**
+
+---
+
 ## 🚀 1. Executável Standalone (.EXE) no Windows
 
 O executável standalone do **Nyxia Data Bridge** já está compilado e pronto para uso direto (sem necessidade de instalar Python):
