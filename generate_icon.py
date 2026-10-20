@@ -1,7 +1,7 @@
 import math
 from PIL import Image, ImageDraw, ImageFilter
 
-def create_nyxia_data_bridge_icon(size=512):
+def create_data_bridge_icon(size=512):
     # Imagem RGBA de alta fidelidade
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
@@ -135,8 +135,8 @@ def create_nyxia_data_bridge_icon(size=512):
     return img
 
 def main():
-    print("Gerando icones do Nyxia Data Bridge...")
-    icon_512 = create_nyxia_data_bridge_icon(512)
+    print("Gerando icones do Data Bridge...")
+    icon_512 = create_data_bridge_icon(512)
     icon_512.save("app_icon.png", format="PNG")
     print(" - app_icon.png gerado com sucesso (512x512)")
 

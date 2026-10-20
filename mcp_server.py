@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Nyxia Data Bridge - Model Context Protocol (MCP) Server
+Data Bridge - Model Context Protocol (MCP) Server
 Permite que Agentes de IA (Claude Code, Antigravity, Cursor, etc.)
 interajam diretamente com o motor de transporte e custódia de dados via protocolo MCP stdio.
 """
@@ -257,7 +257,7 @@ def execute_tool(name: str, arguments: dict) -> dict:
 
 def run_mcp_server():
     """Loop principal de escuta JSON-RPC 2.0 via stdio para Agentes de IA."""
-    logger.info("Iniciando Nyxia Data Bridge MCP Server no modo stdio...")
+    logger.info("Iniciando Data Bridge MCP Server no modo stdio...")
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stdin.reconfigure(encoding="utf-8")
 

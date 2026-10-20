@@ -1,4 +1,4 @@
-# ✦ Nyxia Data Bridge
+# ✦ Data Bridge
 
 > **Custódia e Transporte de Dados** • Antigravity, Claude Code, Cursor, Windsurf, Ambientes de TI e Estações de Trabalho.
 
@@ -20,7 +20,7 @@ Foi ali que a ficha caiu: **por que a nossa infraestrutura de IA não viaja com 
 
 Se você já sincroniza código pelo Git e anotações por markdown, por que o "estado mental", as skills e a calibragem dos seus agentes de IA continuam acorrentados a uma única máquina?
 
-Ao invés de gastar a tarde remendando pastas na mão, resolvi canalizar a frustração e criar o **Nyxia Data Bridge**: uma ponte soberana, offline e de alta velocidade que empacota o ecossistema cognitivo inteiro em um arquivo único compactado (LZMA2 Ultra), pronto para ser plugado em qualquer notebook — seja Windows ou Ubuntu — e restabelecido em menos de 10 segundos.
+Ao invés de gastar a tarde remendando pastas na mão, resolvi canalizar a frustração e criar o **Data Bridge**: uma ponte soberana, offline e de alta velocidade que empacota o ecossistema cognitivo inteiro em um arquivo único compactado (LZMA2 Ultra), pronto para ser plugado em qualquer notebook — seja Windows ou Ubuntu — e restabelecido em menos de 10 segundos.
 
 ---
 
@@ -41,7 +41,7 @@ Então fui com tudo nessa direção: expandi a ferramenta para suportar qualquer
 
 ### 🌐 Construindo uma Infraestrutura Livre da Nuvem (Participe!)
 
-O **Nyxia Data Bridge** é um manifesto em forma de código por uma computação **Local-First, Soberana e Descentralizada**. A nuvem tem seu valor, mas sua estação de trabalho, suas memórias de inteligência artificial e suas ferramentas essenciais não deveriam depender de conexão com internet ou da boa vontade de servidores corporativos para funcionar.
+O **Data Bridge** é um manifesto em forma de código por uma computação **Local-First, Soberana e Descentralizada**. A nuvem tem seu valor, mas sua estação de trabalho, suas memórias de inteligência artificial e suas ferramentas essenciais não deveriam depender de conexão com internet ou da boa vontade de servidores corporativos para funcionar.
 
 Se você também acredita que o poder computacional deve pertencer a quem o opera:
 - **Adicione novos módulos**: Tem ferramentas de IA, terminais, IDEs ou bancos que você usa no seu dia a dia? Submeta um PR com novos presets em `presets.py`.
@@ -54,9 +54,9 @@ Faça um fork, teste, use no seu dia a dia e **ajude a construir uma infraestrut
 
 ## 🚀 1. Executável Standalone (.EXE) no Windows
 
-O executável standalone do **Nyxia Data Bridge** já está compilado e pronto para uso direto (sem necessidade de instalar Python):
+O executável standalone do **Data Bridge** já está compilado e pronto para uso direto (sem necessidade de instalar Python):
 
-- **Caminho do Executável**: `dist/NyxiaDataBridge.exe`
+- **Caminho do Executável**: `dist/DataBridge.exe`
 - **Ícone Integrado**: Ícone oficial do aplicativo embutido no `.exe`.
 - **Modo Híbrido**: 
   - Se você der **dois cliques no arquivo** pelo Windows Explorer: abre a **Interface Gráfica Completa** (Nyxia Crystal Fluent).
@@ -72,7 +72,7 @@ build.bat
 
 ## 🐧 2. Como Usar no Linux Ubuntu
 
-O Nyxia Data Bridge é 100% multiplataforma e possui suporte nativo ao Linux Ubuntu:
+O Data Bridge é 100% multiplataforma e possui suporte nativo ao Linux Ubuntu:
 
 ### Instalação no Ubuntu:
 ```bash
@@ -102,7 +102,7 @@ python3 app.py
 
 ---
 
-## 🤖 3. Como Agentes de IA Podem Usar o Nyxia Data Bridge
+## 🤖 3. Como Agentes de IA Podem Usar o Data Bridge
 
 Agentes de IA (como **Antigravity**, **Claude Code**, **Cursor**, ou scripts autônomos) podem interagir com a ferramenta de 3 formas:
 
@@ -111,25 +111,25 @@ O binário `.exe` ou script Python responde instantaneamente em JSON para consum
 
 ```bash
 # Listar todos os módulos e perfis disponíveis:
-NyxiaDataBridge.exe list --json
+DataBridge.exe list --json
 # ou no Linux:
 python3 cli.py list --json
 
 # Exportar perfil de Agentes de IA em 1 comando:
-NyxiaDataBridge.exe export --profile profile_ai_nomad -o backup_ia.agpkg --json
+DataBridge.exe export --profile profile_ai_nomad -o backup_ia.agpkg --json
 
 # Exportar módulos específicos:
-NyxiaDataBridge.exe export --modules antigravity_gemini,claude_code -o snapshot.agpkg --json
+DataBridge.exe export --modules antigravity_gemini,claude_code -o snapshot.agpkg --json
 
 # Inspecionar pacote sem descompactar:
-NyxiaDataBridge.exe inspect backup_ia.agpkg --json
+DataBridge.exe inspect backup_ia.agpkg --json
 
 # Restaurar pacote de dados:
-NyxiaDataBridge.exe restore backup_ia.agpkg --json
+DataBridge.exe restore backup_ia.agpkg --json
 ```
 
 ### B) Via Servidor MCP (Model Context Protocol) Nativo
-O Nyxia Data Bridge possui um servidor MCP embutido sobre `stdio` (JSON-RPC 2.0).
+O Data Bridge possui um servidor MCP embutido sobre `stdio` (JSON-RPC 2.0).
 
 #### Ferramentas MCP Disponíveis para os Agentes:
 1. `nyxia_list_modules`: Lista módulos reconhecidos no computador e se estão presentes no disco.
@@ -142,7 +142,7 @@ O Nyxia Data Bridge possui um servidor MCP embutido sobre `stdio` (JSON-RPC 2.0)
 {
   "mcpServers": {
     "nyxia-bridge": {
-      "command": "C:\\Users\\David\\.gemini\\antigravity\\scratch\\nyxia-core-bridge\\dist\\NyxiaDataBridge.exe",
+      "command": "C:\\Users\\David\\.gemini\\antigravity\\scratch\\nyxia-core-bridge\\dist\\DataBridge.exe",
       "args": ["mcp"]
     }
   }

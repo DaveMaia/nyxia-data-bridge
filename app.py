@@ -66,7 +66,7 @@ NOMAD_SLIDES = [
         "tag": "ARQUITETURA SOBERANA",
         "title": "Universal Data Mover & Soberania Cognitiva",
         "subtitle": "A ponte universal para transportar agentes de IA, ambientes de TI e estações de trabalho.",
-        "thesis": "Modelos de linguagem e ambientes operacionais vivem no seu disco local. O Nyxia Data Bridge liberta seu ecossistema sem depender da nuvem.",
+        "thesis": "Modelos de linguagem e ambientes operacionais vivem no seu disco local. O Data Bridge liberta seu ecossistema sem depender da nuvem.",
         "cards": [
             ("Manifesto Nomad & Soberania Digital", "Independência de telemetria e proteção de memórias de IA sob custódia física e local absoluta."),
             ("Custódia Soberana Ponto a Ponto", "Seus prompts, caches de IDE, scripts de PowerShell e chaves SSH trafegam fisicamente sob seu controle absoluto."),
@@ -135,7 +135,7 @@ class OnboardingScreen(ctk.CTkFrame):
 
         lbl_brand = ctk.CTkLabel(
             top_bar,
-            text="NYXIA DATA BRIDGE  •  MANIFESTO NOMAD",
+            text="DATA BRIDGE  •  MANIFESTO NOMAD",
             font=ctk.CTkFont(family="Segoe UI", size=11, weight="bold"),
             text_color=TEXT_MUTED
         )
@@ -544,7 +544,7 @@ class DataBoxWidget:
 
 
 class MainToolScreen(ctk.CTkFrame):
-    """Tela 2: Painel Operacional Nyxia Data Bridge com Catálogo Lateral Recolhível."""
+    """Tela 2: Painel Operacional Data Bridge com Catálogo Lateral Recolhível."""
     def __init__(self, parent, app_controller):
         super().__init__(parent, fg_color="transparent")
         self.app = app_controller
@@ -571,7 +571,7 @@ class MainToolScreen(ctk.CTkFrame):
 
         title_lbl = ctk.CTkLabel(
             top_header_row,
-            text="NYXIA DATA BRIDGE",
+            text="DATA BRIDGE",
             font=ctk.CTkFont(family="Segoe UI", size=18, weight="bold"),
             text_color=COLOR_PRIMARY
         )
@@ -1217,7 +1217,7 @@ class MainToolScreen(ctk.CTkFrame):
 
         ctk.CTkLabel(
             info_box,
-            text="Selecione o arquivo de pacote (.agpkg) gerado no desktop. O Nyxia Data Bridge lerá o manifesto interno e distribuirá cada módulo diretamente nos seus locais originais no Windows.",
+            text="Selecione o arquivo de pacote (.agpkg) gerado no desktop. O Data Bridge lerá o manifesto interno e distribuirá cada módulo diretamente nos seus locais originais no Windows.",
             font=ctk.CTkFont(family="Segoe UI", size=11),
             text_color=TEXT_MUTED,
             justify="left"
@@ -1306,7 +1306,7 @@ class NyxiaCoreBridgeApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("Nyxia Data Bridge • Custódia e Transporte de Dados")
+        self.title("Data Bridge • Custódia e Transporte de Dados")
         self.geometry("1020x900")
         self.minsize(940, 820)
         self.configure(fg_color=SURFACE_BASE)
@@ -1449,7 +1449,7 @@ class NyxiaCoreBridgeApp(ctk.CTk):
 
     def browse_package_file(self):
         chosen = filedialog.askopenfilename(
-            filetypes=[("Pacotes Nyxia Data Bridge", "*.agpkg;*.7z;*.zip"), ("Todos os Arquivos", "*.*")]
+            filetypes=[("Pacotes Data Bridge", "*.agpkg;*.7z;*.zip"), ("Todos os Arquivos", "*.*")]
         )
         if chosen:
             self.package_import_path.set(os.path.normpath(chosen))
@@ -1521,7 +1521,7 @@ class NyxiaCoreBridgeApp(ctk.CTk):
         mode = self.compress_mode.get()
         save_file = filedialog.asksaveasfilename(
             defaultextension=".agpkg",
-            filetypes=[("Pacote Nyxia Data Bridge", "*.agpkg"), ("Arquivo 7-Zip", "*.7z"), ("Arquivo Zip", "*.zip")]
+            filetypes=[("Pacote Data Bridge", "*.agpkg"), ("Arquivo 7-Zip", "*.7z"), ("Arquivo Zip", "*.zip")]
         )
         if not save_file:
             return

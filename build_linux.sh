@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # ============================================================
-# NYXIA DATA BRIDGE - SCRIPT DE INSTALAÇÃO E EXECUÇÃO NO UBUNTU
+# DATA BRIDGE - SCRIPT DE INSTALAÇÃO E EXECUÇÃO NO UBUNTU
 # ============================================================
 set -e
 
-echo "=== Nyxia Data Bridge: Verificando ambiente Linux Ubuntu ==="
+echo "=== Data Bridge: Verificando ambiente Linux Ubuntu ==="
 
 # 1. Dependências do sistema (Python, Tkinter)
 if command -v apt-get &> /dev/null; then
@@ -14,7 +14,7 @@ if command -v apt-get &> /dev/null; then
 fi
 
 # 2. Instalação de dependências Python
-echo "[2/3] Instalando bibliotecas Python do Nyxia Data Bridge..."
+echo "[2/3] Instalando bibliotecas Python do Data Bridge..."
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 

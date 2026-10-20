@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Nyxia Data Bridge - Interface de Linha de Comando (CLI) para Agentes de IA & SysAdmins.
+Data Bridge - Interface de Linha de Comando (CLI) para Agentes de IA & SysAdmins.
 Permite listar, inspecionar, exportar e restaurar estados cognitivos e configurações de forma determinística via terminal.
 """
 
@@ -36,7 +36,7 @@ def cmd_list(args):
         return 0
 
     print("=" * 68)
-    print("  NYXIA DATA BRIDGE - CATÁLOGO DE MÓDULOS DISPONÍVEIS")
+    print("  DATA BRIDGE - CATÁLOGO DE MÓDULOS DISPONÍVEIS")
     print("=" * 68)
     print(f"\n[ PERFIS PRONTOS (1-CLIQUE) ]")
     for prof in presets.PROFILES:
@@ -184,7 +184,7 @@ def cmd_inspect(args):
         return 0
 
     print("=" * 68)
-    print("  NYXIA DATA BRIDGE - INSPETOR DE PACOTE")
+    print("  DATA BRIDGE - INSPETOR DE PACOTE")
     print("=" * 68)
     print(f"  Arquivo:       {pkg_path}")
     print(f"  Tamanho Disco: {fsize / (1024*1024):.2f} MB")
@@ -256,7 +256,7 @@ def cmd_mcp(args):
 def main():
     parser = argparse.ArgumentParser(
         prog="nyxia-bridge",
-        description="Nyxia Data Bridge - Custódia e Transporte de Dados para Humanos e Agentes de IA (Windows & Linux Ubuntu)"
+        description="Data Bridge - Custódia e Transporte de Dados para Humanos e Agentes de IA (Windows & Linux Ubuntu)"
     )
     subparsers = parser.add_subparsers(dest="subcommand", help="Comandos disponíveis")
 

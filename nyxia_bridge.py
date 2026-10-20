@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Nyxia Data Bridge - Python SDK para Desenvolvedores e Agentes de IA
+Data Bridge - Python SDK para Desenvolvedores e Agentes de IA
 API limpa e tipada para orquestração de custódia e transporte de dados.
 """
 

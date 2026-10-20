@@ -1,7 +1,7 @@
 @echo off
-title Compilando Nyxia Data Bridge (.EXE)...
+title Compilando Data Bridge (.EXE)...
 echo ============================================================
-echo   NYXIA DATA BRIDGE - BUILD EXECUTAVEL STANDALONE (.EXE)
+echo   DATA BRIDGE - BUILD EXECUTAVEL STANDALONE (.EXE)
 echo ============================================================
 echo.
 
@@ -15,7 +15,7 @@ py -3.11 -m PyInstaller ^
     --noconfirm ^
     --onefile ^
     --windowed ^
-    --name "NyxiaDataBridge" ^
+    --name "DataBridge" ^
     --icon "app_icon.ico" ^
     --add-data "nyxia_logo.png;." ^
     --add-data "header_icon.png;." ^
@@ -28,6 +28,6 @@ py -3.11 -m PyInstaller ^
 echo.
 echo ============================================================
 echo   BUILD FINALIZADO COM SUCESSO!
-echo   Executavel standalone gerado em: dist\NyxiaDataBridge.exe
+echo   Executavel standalone gerado em: dist\DataBridge.exe
 echo ============================================================
 pause
